@@ -1,0 +1,193 @@
+/* styles.css */
+
+:root {
+  --green: #b7c062; 
+  --boxShadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+  --gray: #808080; 
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+.bg-custom-green {
+  background-color: rgb(183, 192, 98);
+}
+
+.text-custom-green {
+  color: rgb(183, 192, 98);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.narrow-text {
+  max-width: 400px; 
+}
+
+.narrow-text-content {
+  width: 100%;
+  color: #788097;
+}
+
+@font-face {
+  font-family: 'Gumela Regular';
+  src: url('/home/wioletta/Desktop/mobile-portfolio/src/fonts/Gumela Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'Gumela Regular', sans-serif;
+}
+
+.i-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0rem;
+}
+
+.i-icons > * {
+  transform: scale(0.3);
+}
+
+.i-icons > *:hover {
+  cursor: pointer;
+}
+
+.hero-container {
+  margin-bottom: 40px;
+  height: 800px;
+}
+.skills-container {
+  margin-top: 2rem;
+  height: 800px;
+}
+
+.s-button {
+  width: 8rem;
+  margin-top: 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px; 
+}
+
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+
+.i-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 4rem; 
+}
+
+
+.cards {
+  display: flex;
+  gap: 1rem; 
+}
+
+.card {
+  position: relative;
+  width: 250px; 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--green);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 0.5rem; 
+  animation: float 3s ease-in-out infinite;
+  overflow: hidden;
+ margin: 1rem;
+}
+
+.card img {
+  width: 10%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 0.8rem; /* Adjust the relative font size as needed */
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.detail {
+  font-size: 0.6rem;
+  color: #788097;
+}
+
+
+.experience-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.tech-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.experience-years {
+  font-size: 12px;
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--green);
+  border-radius: 50%;
+  font-size: 1rem;
+  margin: 1rem;
+  color: white; /* assuming you want the text to be white */
+}
+
