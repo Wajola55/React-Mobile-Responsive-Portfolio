@@ -41,9 +41,9 @@ const Hero = () => {
                     src={Wiola}
                     alt=""
                     style={{
-                        width: '200px',
+                        width: '90px',
                         float: 'right',
-                        marginRight: '60px',
+                        marginRight: '10px',
                     }}
                 />
             </div>

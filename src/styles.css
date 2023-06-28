@@ -34,7 +34,7 @@
 }
 
 .narrow-text {
-  max-width: 400px; 
+  max-width: 300px; 
 }
 
 .narrow-text-content {
@@ -52,7 +52,7 @@ body {
 }
 
 .i-icons {
-  margin-top: 2rem;
+  margin-top: 0.1rem;
   display: flex;
   gap: 0rem;
 }
@@ -66,12 +66,14 @@ body {
 }
 
 .hero-container {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   height: 800px;
 }
+
 .skills-container {
-  margin-top: 2rem;
-  height: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
 }
 
 .s-button {
@@ -86,7 +88,7 @@ body {
 
 
 .mr-4 {
-  margin-right: 1rem;
+  margin-right: 5rem;
 }
 
 
@@ -99,6 +101,11 @@ body {
   padding: 0 4rem; 
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
+
 
 .cards {
   display: flex;
@@ -107,24 +114,27 @@ body {
 
 .card {
   position: relative;
-  width: 250px; 
-  height: auto;
+  width: 270px;
+  height: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background: rgba(255, 255, 255, 0.26);
-  border: 7px solid var(--green);
+  border: 6px solid var(--green);
   box-shadow: var(--boxShadow);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 0.5rem; 
   animation: float 3s ease-in-out infinite;
   overflow: hidden;
- margin: 1rem;
+  margin: 1rem;
+  margin-top: 14rem;
+  margin-right: 21px;
+
 }
 
 .card img {
-  width: 10%;
+  width: 30%;
   height: auto;
   object-fit: cover;
 }
@@ -139,7 +149,7 @@ body {
 }
 
 .title {
-  font-size: 0.8rem; /* Adjust the relative font size as needed */
+  font-size: 0.8rem; 
   margin: 0.5rem 0;
   font-weight: bold;
 }
@@ -151,7 +161,7 @@ body {
 
 
 .experience-container {
-  margin-top: 2rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,8 +192,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: var(--green);
   border-radius: 50%;
   font-size: 1rem;
@@ -191,3 +201,115 @@ body {
   color: white; /* assuming you want the text to be white */
 }
 
+.project-row {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.slide-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+
+/* Contact Component */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 40rem;
+}
+
+.w-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technical {
+  text-align: center;
+}
+
+.contact-me {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.image-class {
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+.button {
+  width: 100px;
+  padding: 0.5rem;
+  background-color: #b7c062;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #b7c062;
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.i-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.4);
+  gap: 15rem;
+  margin-top: 10rem;
+
+}
+
+.email-address {
+  text-align: center;
+  margin-bottom: 10px;
+}
