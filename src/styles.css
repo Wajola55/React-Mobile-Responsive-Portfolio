@@ -159,12 +159,13 @@ body {
   color: #788097;
 }
 
-
+/* Experience component */
 .experience-container {
-  margin-top: 8rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 .experience-content {
@@ -198,9 +199,10 @@ body {
   border-radius: 50%;
   font-size: 1rem;
   margin: 1rem;
-  color: white; /* assuming you want the text to be white */
+  color: white;
 }
 
+/* Projects component */
 .project-row {
   display: flex;
   justify-content: center;
@@ -234,11 +236,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-bottom: 40rem;
+  margin-top: -10rem;
 }
 
 .w-left {
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,17 +301,18 @@ form {
   font-weight: bold;
 }
 
+/* Footer component */
 .i-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0.4);
-  gap: 15rem;
-  margin-top: 10rem;
+  transform: scale(0.5);
+  gap: 5rem;
+  margin-top: 5rem;
 
 }
 
 .email-address {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }

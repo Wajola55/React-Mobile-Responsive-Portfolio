@@ -9,11 +9,25 @@ import '../styles.css';
 const Navbar = () => {
 const [nav, setNav] = useState(false)
 
+
+
+const scrollToComponent = (componentId) => {
+  document.getElementById(componentId).scrollIntoView({behavior: "smooth"});
+  setNav(!nav);
+}
+
+
+const scrollToComponentOnly = (componentId) => {
+  document.getElementById(componentId).scrollIntoView({behavior: "smooth"});
+}
+
   return (
     <div className="max-w-[2000px] mx-auto flex justify-between 
     items-center p-7 relative">
       {/* Left side */}
       <div className="flex items-center flex-grow">
+    
+        
         <div onClick={()=> setNav(!nav)} className="cursor-pointer">
           <AiOutlineUnorderedList size={20} />
         </div>
@@ -24,15 +38,17 @@ const [nav, setNav] = useState(false)
 
       {/* Right side */}
       <div className="navbar-right">
-        {/* Add any additional content for the right side */}
       </div>
       {/* Contact button */}
       <div className="absolute right-8 md:right-30 top-1/2 transform -translate-y-1/2">
-        <button className='bg-custom-green text-white flex 
-        items-center py-2 rounded-full'>
-            <BsPersonFill size={10} className='mr-1' />Contact
-        </button>
-      </div>
+    <button 
+        onClick={() => scrollToComponentOnly('Contact')} 
+        className='bg-custom-green text-white flex items-center py-2 rounded-full'
+    >
+        <BsPersonFill size={10} className='mr-1' />Contact
+    </button>
+</div>
+
       
       {/* Mobile Menu */}
       {/* Overlay */}
@@ -50,21 +66,22 @@ const [nav, setNav] = useState(false)
             Wioletta <span>Koczor</span>
           </h2>
           <nav>
-            <ul className='flex flex-col p-4 text-gray-800'>
-              <li className='text-xl py-3 flex'><AiFillHome
-              size={25} className='m-1' /> Home</li>
-              <li className='text-xl py-3 flex'><GiSkills
-              size={25} className='m-1' /> Skills</li>
-              <li className='text-xl py-3 flex'><MdWorkHistory
-              size={25} className='m-1' /> Experience</li>
-              <li className='text-xl py-3 flex'><AiFillProject
-              size={25} className='m-1' /> Projects</li>
-              <li className='text-xl py-3 flex'><BsPersonFill
-              size={25} className='m-1' /> Contact</li>
-            </ul>
-          </nav>
-      </div>
+          <ul className='flex flex-col p-4 text-gray-800'>
+            <li className='text-xl py-3 flex cursor-pointer' onClick={() => scrollToComponent('home')}><AiFillHome
+            size={25} className='m-1' /> Home</li>
+            <li className='text-xl py-3 flex cursor-pointer' onClick={() => scrollToComponent('skills')}><GiSkills
+            size={25} className='m-1' /> Skills</li>
+            <li className='text-xl py-3 flex cursor-pointer' onClick={() => scrollToComponent('experience')}><MdWorkHistory
+            size={25} className='m-1' /> Experience</li>
+            <li className='text-xl py-3 flex cursor-pointer' onClick={() => scrollToComponent('projects')}><AiFillProject
+            size={25} className='m-1' /> Projects</li>
+            <li className='text-xl py-3 flex cursor-pointer' onClick={() => scrollToComponent('contact')}><BsPersonFill
+            size={25} className='m-1' /> Contact</li>
+</ul>
+
+      </nav>
     </div>
+  </div>  
   );
 };
 
