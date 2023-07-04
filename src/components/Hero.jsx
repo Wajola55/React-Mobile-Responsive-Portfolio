@@ -7,7 +7,7 @@ import '../styles.css';
 
 const Hero = () => {
     return (
-        <div className='max-w-[1640px] mx-auto p-4 hero-container'>
+        <div className='sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto p-4 hero-container'>
             <div className='max-h-[500px] relative'>
                 {/* Overlay */}
                 <div className='absolute w-full h-full flex flex-col justify-start items-start'>
@@ -44,6 +44,8 @@ const Hero = () => {
                         width: '90px',
                         float: 'right',
                         marginRight: '10px',
+                        marginTop: '-20px',
+                        
                     }}
                 />
             </div>

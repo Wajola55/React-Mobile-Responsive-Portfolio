@@ -18,6 +18,17 @@
   }
 }
 
+
+.text-xl {
+  font-size: 0.9rem;
+}
+
+.name {
+  line-height: 1; 
+}
+
+
+
 .bg-custom-green {
   background-color: rgb(183, 192, 98);
 }
@@ -109,27 +120,27 @@ body {
 
 .cards {
   display: flex;
-  gap: 1rem; 
+
 }
 
 .card {
   position: relative;
-  width: 270px;
-  height: 340px;
+  width: 30%;
+  height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background: rgba(255, 255, 255, 0.26);
-  border: 6px solid var(--green);
+  border: 3px solid var(--green);
   box-shadow: var(--boxShadow);
   border-radius: 10px;
   padding: 0.5rem; 
   animation: float 3s ease-in-out infinite;
   overflow: hidden;
   margin: 1rem;
-  margin-top: 14rem;
-  margin-right: 21px;
+  margin-top: 17rem;
+  margin-right: 30px;
 
 }
 
@@ -149,13 +160,13 @@ body {
 }
 
 .title {
-  font-size: 0.8rem; 
+  font-size: 0.6rem; 
   margin: 0.5rem 0;
   font-weight: bold;
 }
 
 .detail {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   color: #788097;
 }
 
@@ -206,7 +217,7 @@ body {
 .project-row {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -235,8 +246,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: -10rem;
+  height: 60vh;
+  margin-top: -5rem;
+  margin-right: 27px;
 }
 
 .w-left {
@@ -277,7 +289,7 @@ form {
 }
 
 .user {
-  width: 300px;
+  width: 200px;
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
@@ -285,12 +297,13 @@ form {
 
 .button {
   width: 100px;
-  padding: 0.5rem;
+  padding: 0.3rem;
   background-color: #b7c062;
   color: #fff;
   border: none;
   cursor: pointer;
 }
+
 
 .button:hover {
   background-color: #b7c062;
@@ -316,3 +329,29 @@ form {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+/* Flags */
+
+.flag-button {
+  margin-right: 10rem;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.flag-button:focus {
+  outline: none;
+}
+
+.flag-icon {
+  width: 30px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+

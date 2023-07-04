@@ -40,7 +40,7 @@ const Skills = () => {
       </div>
 
       {/* Cards */}
-      <div className="cards flex justify-center gap-4" style={{ width: '410px', height: '600px' }}>
+      <div className="cards">
         <Card
           django={django}
           title="Django Web Development"

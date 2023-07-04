@@ -3,51 +3,51 @@ import { AiOutlineUnorderedList, AiOutlineClose, AiFillHome, AiFillProject} from
 import {BsPersonFill} from 'react-icons/bs'
 import {MdWorkHistory} from 'react-icons/md'
 import {GiSkills} from 'react-icons/gi'
+
+import enFlag from './images/UK.png';
+import plFlag from './images/Poland.png';
+
 import '../styles.css';
 
 
 const Navbar = () => {
-const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false)
 
 
+  const scrollToComponent = (componentId) => {
+    document.getElementById(componentId).scrollIntoView({behavior: "smooth"});
+    setNav(!nav);
+  }
 
-const scrollToComponent = (componentId) => {
-  document.getElementById(componentId).scrollIntoView({behavior: "smooth"});
-  setNav(!nav);
-}
 
-
-const scrollToComponentOnly = (componentId) => {
-  document.getElementById(componentId).scrollIntoView({behavior: "smooth"});
-}
+  const scrollToComponentOnly = (componentId) => {
+    document.getElementById(componentId).scrollIntoView({behavior: "smooth"});
+  }
 
   return (
     <div className="max-w-[2000px] mx-auto flex justify-between 
     items-center p-7 relative">
       {/* Left side */}
-      <div className="flex items-center flex-grow">
-    
-        
+      <div className="flex items-center space-x-4">
         <div onClick={()=> setNav(!nav)} className="cursor-pointer">
           <AiOutlineUnorderedList size={20} />
         </div>
-        <h1 className='flex-grow text-xl sm:text-2xl lg:text-2xl px-2'>
+        <h1 className='text-xl sm:text-xl lg:text-xl px-2 name'>
           Wioletta <span>Koczor</span>
         </h1>
+        <a href="http://mobile.wkoczor.pl" target="_blank" rel="noopener noreferrer">  
+        <img src={enFlag} alt="English Flag" className="flag-icon" />
+        </a>
+        <a href="http://mobile.wkoczor.pl/PL" target="_blank" rel="noopener noreferrer">
+        <img src={plFlag} alt="Polish Flag" className="flag-icon" />
+        </a>
+        <button 
+            onClick={() => scrollToComponentOnly('Contact')} 
+            className='bg-custom-green text-white flex items-center py-1 rounded-full'
+        >
+            <BsPersonFill size={8} className='mr-1' />Contact
+        </button>
       </div>
-
-      {/* Right side */}
-      <div className="navbar-right">
-      </div>
-      {/* Contact button */}
-      <div className="absolute right-8 md:right-30 top-1/2 transform -translate-y-1/2">
-    <button 
-        onClick={() => scrollToComponentOnly('Contact')} 
-        className='bg-custom-green text-white flex items-center py-2 rounded-full'
-    >
-        <BsPersonFill size={10} className='mr-1' />Contact
-    </button>
-</div>
 
       
       {/* Mobile Menu */}
@@ -62,7 +62,7 @@ const scrollToComponentOnly = (componentId) => {
             onClick={()=> setNav(!nav)}
            size={30} className='absolute right-4
           top-4 cursor-pointer' />
-          <h2 className='text-2xl p-4'>
+          <h2 className='text-1xl p-2'>
             Wioletta <span>Koczor</span>
           </h2>
           <nav>
