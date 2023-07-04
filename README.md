@@ -2,7 +2,7 @@
 
 This project is a mobile-dedicated portfolio website hosted on mobile.wkoczor.pl, which is a subdomain of wkoczor.pl. It is built using React and designed specifically for mobile devices. When users access wkoczor.pl from their mobile phones, they are automatically redirected to the mobile-friendly version at mobile.wkoczor.pl. The site showcases skills, experience, projects, and contact information.
 
-![01 main_page](https://github.com/Wajola55/React-Mobile-Responsive-Portfolio/assets/118658753/a6bb7911-5c12-4bac-847d-bd6a6fe299e3)
+![01 home](https://github.com/Wajola55/React-Mobile-Responsive-Portfolio/assets/118658753/2c388aa7-bce6-4efc-9aab-95dbe3bdc2cd)
 
 
 ## Features
