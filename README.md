@@ -1,11 +1,13 @@
-## React Mobile Responsive Portfolio
+### React Mobile Responsive Portfolio
 
 This project is a mobile-dedicated portfolio website hosted on mobile.wkoczor.pl, which is a subdomain of wkoczor.pl. It is built using React and designed specifically for mobile devices. When users access wkoczor.pl from their mobile phones, they are automatically redirected to the mobile-friendly version at mobile.wkoczor.pl. The site showcases skills, experience, projects, and contact information.
+
+The React application has been compiled into a production-ready build using yarn build, ensuring optimized performance and minimized bundle size.
 
 ![01 home](https://github.com/Wajola55/React-Mobile-Responsive-Portfolio/assets/118658753/2c388aa7-bce6-4efc-9aab-95dbe3bdc2cd)
 
 
-## Features
+### Features
 
 <li>Mobile-oriented layout: The site layout adapts flawlessly to various screen sizes for a seamless mobile user experience.
 
@@ -23,13 +25,13 @@ This project is a mobile-dedicated portfolio website hosted on mobile.wkoczor.pl
 
   ![04 contact_footer](https://github.com/Wajola55/React-Mobile-Responsive-Portfolio/assets/118658753/305e9cfa-65f4-43c7-82b8-1fef2ceffe6f)
 
-## Technologies Used
+### Technologies Used
 
 <li> React: A JavaScript library for building user interfaces.
 <li> Tailwind CSS: A utility-first CSS framework for creating responsive and customizable designs.
 <li> ReactDOM: A package for rendering React components in the browser.
 
-## Getting Started
+### Getting Started
 
 To get started with the project, follow these steps:
 
@@ -38,7 +40,7 @@ To get started with the project, follow these steps:
 3. Run the development server: `yarn start`
 4. Open your browser and visit `http://localhost:3000` to view the website.
 
-## Folder Structure
+### Folder Structure
 
 The project structure is organized as follows:
 
@@ -48,11 +50,11 @@ The project structure is organized as follows:
 <li> `styles.css`: Contains the global styles used in the project.
 <li> `index.js`: Entry point of the application.
 
-## Contributions
+### Contributions
 
 Contributions to the project are welcome. If you have any suggestions, bug reports, or feature requests, please create an issue or submit a pull request.
 
-## License
+### License
 
 This project is licensed under the MIT License. Feel free to use and modify the code for personal or commercial use.
 
