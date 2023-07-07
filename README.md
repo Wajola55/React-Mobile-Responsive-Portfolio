@@ -1,4 +1,4 @@
-### React Mobile Responsive Portfolio
+## React Mobile Responsive Portfolio
 
 This project is a mobile-dedicated portfolio website hosted on mobile.wkoczor.pl, which is a subdomain of wkoczor.pl. It is built using React and designed specifically for mobile devices. When users access wkoczor.pl from their mobile phones, they are automatically redirected to the mobile-friendly version at mobile.wkoczor.pl. The site showcases skills, experience, projects, and contact information.
 
